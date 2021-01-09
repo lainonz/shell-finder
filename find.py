@@ -4,7 +4,7 @@ def find():
     urlInput = input('Weblist: ')
     url = open(urlInput, 'r')
     print('\nContoh file: /wso.php, /up.php, /mini.php, /idx.php')
-    shellext = input('Nama File Shell: ')
+    shellext = input('Nama File: ')
     print('\nContoh Judul: WebOrbShell, Uploader By, IndoXploit Shell')
     shelltitle = input('Judul Shell: ')
     for a in url.readlines():
