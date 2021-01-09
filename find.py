@@ -5,7 +5,7 @@ def find():
     url = open(urlInput, 'r')
     print('\nContoh file: /wso.php, /up.php, /mini.php, /idx.php')
     shellext = input('Nama File Shell: ')
-    print('\nContoh Judul: WebOrbShell, Uploader By, Indoxploit Shell')
+    print('\nContoh Judul: WebOrbShell, Uploader By, IndoXploit Shell')
     shelltitle = input('Judul Shell: ')
     for a in url.readlines():
         urla = a.replace('\n', '')
