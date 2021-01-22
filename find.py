@@ -10,10 +10,13 @@ def find():
     for a in url.readlines():
         urla = a.replace('\n', '')
         print(' '+urla+shellext)
-        r = requests.get(urla+shellext)
-        if shelltitle in r.text:
-            print(' {} --> Shell Found [{}]'.format(urla, shellext))
-            saveshell = open('shell.txt', 'a')
-            saveshell.write(urla+shellext+'\n')
+        try:
+            r = requests.get(urla+shellext)
+            if shelltitle in r.text:
+                print(' {} --> Shell Found [{}]'.format(urla, shellext))
+                saveshell = open('shell.txt', 'a')
+                saveshell.write(urla+shellext+'\n')
+        except:
+            pass
 
 find()
