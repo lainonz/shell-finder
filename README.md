@@ -1,2 +1,3 @@
 # shellfinder
-Webshell Finder
+
+custom path or shell files in shell.txt
